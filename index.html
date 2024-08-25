@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <body>
+     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamster Key Генератор</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+</body>
+<body>
+    <div class="tabs">
+        <button class="tab-button" onclick="openTab(event, 'Tab1')">Вкладка 1</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab2')">Вкладка 2</button>
+        <button class="tab-button" onclick="openTab(event, 'Tab3')">Вкладка 3</button>
+    </div>
+ 
+    <div id="Tab1" class="tab-content" style="display:none">Содержимое вкладки 1</div>
+    <div id="Tab2" class="tab-content" style="display:none"><iframe class="iframe1" src="https://babaduk47.github.io/" title="Встраиваемый контент"></iframe></div>
+    <div id="Tab3" class="tab-content" style="display:none">Содержимое вкладки 3</div>
+    
+    
+ 
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tabbuttons;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tabbuttons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+    <div class="container">
+        <h1>Hamster Key Генератор</h1>
+        <div id="gameSelectContainer" class="grid-container">
+            <div class="game-option" data-game="9">
+                <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
+                <p>Mud Racing</p>
+                </div>
+                <div class="game-option" data-game="8">
+                <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
+                <p>Mow and Trim</p>
+                </div>
+                <div class="game-option" data-game="7">
+                <img src="https://cdn.hamsterkombat.io/polysphere/image.webp" alt="Polysphere">
+                <p>Polysphere</p>
+                </div>
+                <div class="game-option" data-game="6">
+                    <img src="https://cdn.hamsterkombat.io/twerk/image.webp" alt="Twerk Race 3D">
+                    <p>Twerk Race 3D</p>
+                </div>
+                <div class="game-option" data-game="5">
+                    <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away">
+                    <p>Merge Away</p>
+                </div>
+                <div class="game-option" data-game="3">
+                    <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army">
+                    <p>My Clone Army</p>
+                </div>
+                <div class="game-option" data-game="2">
+                    <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048">
+                    <p>Chain Cube 2048</p>
+                </div>
+                <div class="game-option" data-game="4">
+                    <img src="https://cdn.hamsterkombat.io/train_miner/image.webp" alt="Train Miner">
+                    <p>Train Miner</p>
+                </div>
+                <div class="game-option" data-game="1">
+                    <img src="https://cdn.hamsterkombat.io/bikeride/image.webp" alt="Bike Ride 3D">
+                    <p>Bike Ride 3D</p>
+                </div>
+            </div>
+
+        <div class="form-group hidden" id="keyCountGroup">
+            <label for="keyCountSelect">Выберите количество ключей:</label>
+            <div id="keyCountSelect" class="key-slider">
+                <input type="range" min="1" max="10" value="1" id="keyRange">
+                <span id="keyValue">1</span>
+            </div>
+        </div>
+        <button id="startBtn" class="hidden">Генерировать ключи</button>
+
+        <div id="progressContainer" class="hidden">
+            <div class="progress-bar">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText">0%</p>
+            <p id="progressLog">Начало...</p>
+        </div>
+
+        <div id="keyContainer" class="hidden">
+            <h2 id="generatedKeysTitle" class="hidden">Генерация ключей</h2>
+            <div id="keysList"></div>
+            <button id="copyAllBtn" class="hidden">Скопировать все ключи</button>
+        </div>
+
+        <p id="keyCountLabel">количество ключей:</p>
+
+        <button id="generateMoreBtn" class="hidden">Создать больше ключей</button>
+        <p id="copyStatus" class="hidden">Ключи скопированы!</p>
+        
+        <div class="footer">
+            <p>Так же поддержите наш канал...подпиской</p>
+            <button id="sourceCode">MrKrabsArt</button>
+        </div>
+    </div>
+    <p>
+        <iframe src="https://flappybird2.com/" title="Встраиваемый контент"></iframe>
+    </p>
+
+    <script src="script.js"></script>
+</body>
+</html>
