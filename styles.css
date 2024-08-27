@@ -12,6 +12,13 @@ body {
     margin: 0;
     flex-direction: column;
 }
+.tab-button {
+    gap: 10px;
+    margin-bottom: 20px;
+    
+
+
+}
 /*меню*/
 .container {
     background-image: url('https://c0.klipartz.com/pngpicture/140/289/gratis-png-danganronpa-2-adios-desesperacion-danganronpa-v3-matando-al-jugador-de-anime-de-armonia-anime.png');
@@ -132,6 +139,11 @@ label {
 /*Активный ползунок*/
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
     background: #ff8800;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+
 }
 /*кол. ключей на ползунке*/
 #keyValue {

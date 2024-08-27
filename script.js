@@ -320,23 +320,25 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     
     sourceCode.addEventListener('click', () => {
-        window.open('https://t.me/+Up7P6ppWdxdiNjIy');
+        window.open('https://t.me/+Up7P6ppWdxdiNjIy', '_blank');
     });
-
+    
     function restoreScroll() {
         document.body.style.overflow = "auto";
     }
+    
     function openTab(evt, tabName) {
-        var i, tabcontent, tabbuttons;
-        tabcontent = document.getElementsByClassName("tab-content");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tabbuttons = document.getElementsByClassName("tab-button");
-        for (i = 0; i < tabbuttons.length; i++) {
-            tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
-        }
+        const tabcontent = document.querySelectorAll(".tab-content");
+        const tabbuttons = document.querySelectorAll(".tab-button");
+    
+        tabcontent.forEach(content => content.style.display = "none");
+        tabbuttons.forEach(button => button.classList.remove("active"));
+    
         document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-});
+        evt.currentTarget.classList.add("active");
+    
+        // Обновление доступности
+        document.querySelectorAll('.tab-content').forEach((content, index) => {
+            content.setAttribute('aria-hidden', index !== (tabName - 1));
+        });
+    }})

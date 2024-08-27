@@ -10,44 +10,27 @@
     </head>
 </body>
 <body>
-    <div class="tabs">
-        <button class="tab-button" onclick="openTab(event, 'Tab1')">    *     </button>
-        <button class="tab-button" onclick="openTab(event, 'Tab2')">Мини-игра</button>
-        <button class="tab-button" onclick="openTab(event, 'Tab3')">Шифр</button>
-        <button class="tab-button" onclick="openTab(event, 'Tab4')">Комбо</button>
+    <div class="vkadki">
+        <a href="mini-games.html" target="_blank">
+            <button>Mini-games</button>
+        <a href="kombo.html" target="_blank">
+            <button>Kombo</button>
+        <a href="schivr.html" target="_blank">
+            <button>Шифр</button>
+        <a href="info.html" target="_blank">
+            <button>Info</button>
+
+        </a>
     </div>
- 
-    <div id="Tab1" class="tab-content" style="display:none"></div>
-    <div id="Tab2" class="tab-content" style="display:none">Скоро будет</div>
-    <div id="Tab3" class="tab-content" style="display:none">Скоро будет</div>
-    <div id="Tab4" class="tab-content" style="display:none">Скоро будет</div>
-    
-    
- 
-    <script>
-        function openTab(evt, tabName) {
-            var i, tabcontent, tabbuttons;
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tabbuttons = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tabbuttons.length; i++) {
-                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
-            }
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
     <div class="container">
         <h1>Hamster Key Генератор</h1>
         <div id="gameSelectContainer" class="grid-container">
             <div class="game-option" data-game="9">
-                <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
+                <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Mud Racing">
                 <p>Mud Racing</p>
                 </div>
                 <div class="game-option" data-game="8">
-                <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
+                <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Mow and Trime">
                 <p>Mow and Trim</p>
                 </div>
                 <div class="game-option" data-game="7">
@@ -61,10 +44,6 @@
                 <div class="game-option" data-game="5">
                     <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away">
                     <p>Merge Away</p>
-                </div>
-                <div class="game-option" data-game="3">
-                    <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army">
-                    <p>My Clone Army</p>
                 </div>
                 <div class="game-option" data-game="2">
                     <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048">
