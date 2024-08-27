@@ -136,6 +136,7 @@ label {
     cursor: pointer;
     transition: background 0.3s;
 }
+
 /*Активный ползунок*/
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
     background: #ff8800;
