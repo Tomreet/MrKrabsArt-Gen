@@ -13,7 +13,7 @@ body {
     background-image: url('https://i.pinimg.com/564x/25/ca/b7/25cab75b36abebcabb2cb0f3181e2223.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.5); /* Устанавливаем полупрозрачный черный цвет */
+   
     
 }
 .tab-button {
@@ -25,8 +25,7 @@ body {
 }
 /*меню*/
 .container {
-    background-image: url('https://c0.klipartz.com/pngpicture/140/289/gratis-png-danganronpa-2-adios-desesperacion-danganronpa-v3-matando-al-jugador-de-anime-de-armonia-anime.png');
-    background: #424242;
+    background-color: rgba(128, 128, 128, 0.5);
     /*закругление*/
     border-radius: 50px;
     /*тень*/
