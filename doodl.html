@@ -6,6 +6,7 @@
   <title>Doodle Jump</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/deviceorientation/1.1.3/deviceorientation.min.js"></script>
 </head>
 <body>
   <div id="myElement"></div>
@@ -37,17 +38,11 @@
         <button>Камень</button>
       </a>
     </div>
-</div>
-
-<script>
-  if ("geolocation" in navigator) {
-    navigator.geolocation.watchPosition(function(position) {
-      var element = document.getElementById('myElement');
-      element.style.transform = 'rotate(' + position.coords.heading + 'deg)';
-    });
-  } else {
-    alert("Geolocation is not supported by this browser.");
-  }
-</script>
-</body>
-</html>
+    <script>
+        window.addEventListener("deviceorientation", function(event) {
+          var element = document.getElementById('myElement');
+          element.style.transform = 'rotate(' + event.alpha + 'deg)';
+        }, false);
+      </script>
+    </body>
+    </html>
