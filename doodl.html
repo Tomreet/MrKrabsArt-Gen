@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <body>
-     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Doodle Jump</title>
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doodle Jump</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
 <body>
-    <div id="myElement"></div>
-
-    <script>
-      if (window.DeviceOrientationEvent) {
-        window.addEventListener("deviceorientation", function(event) {
-          var absolute = event.absolute;
-          var alpha = event.alpha;
-          var beta = event.beta;
-          var gamma = event.gamma;
-  
-          var element = document.getElementById('myElement');
-          element.style.transform = 'rotate(' + alpha + 'deg)';
-        }, false);
-      } else {
-        alert('Your browser does not support the DeviceOrientationEvent');
-      }
-    </script>
-    
+  <div id="myElement"></div>
+  <div class="container">
+    <div class="vkadki">
+      <a href="kombo.html" target="_blank">
+        <button>Kombo</button>
+      </a>
+      <a href="schivr.html" target="_blank">
+        <button>Шифр</button>
+      </a>
+      <a href="info.html" target="_blank">
+        <button>Info</button>
+      </a>
     </div>
-    <div class="container">
-        <div class="vkadki">
-            <a href="kombo.html" target="_blank">
-                <button>Kombo</button>
-            <a href="schivr.html" target="_blank">
-                <button>Шифр</button>
-            <a href="info.html" target="_blank">
-                <button>Info</button>
-    
-            </a>
-        </div>
-        <h1>Doodle Jump</h1>
-        <br/>
-        <p>
-            <iframe src="https://doodlejump.fun/" title="Встраиваемый контент"></iframe>
-        </p>
-        <div class="vkadki">
-            <a href="flappybird.html" target="_blank">
-                <button>Flappy Bird</button>
-            <a href="doodl.html" target="_blank">
-                <button>Doodle Jump</button>
-            <a href="kameny.html" target="_blank">
-                <button>Камень</button>
-    
-            </a>
-        </div>
-    
+    <h1>Doodle Jump</h1>
+    <br/>
+    <p>
+      <iframe src="https://doodlejump.fun/" title="Встраиваемый контент"></iframe>
+    </p>
+    <div class="vkadki">
+      <a href="flappybird.html" target="_blank">
+        <button>Flappy Bird</button>
+      </a>
+      <a href="doodl.html" target="_blank">
+        <button>Doodle Jump</button>
+      </a>
+      <a href="kameny.html" target="_blank">
+        <button>Камень</button>
+      </a>
+    </div>
+  </div>
 
-    
+  <script>
+    if (window.DeviceOrientationEvent) {
+      window.addEventListener("deviceorientation", function(event) {
+        var absolute = event.absolute;
+        var alpha = event.alpha;
+        var beta = event.beta;
+        var gamma = event.gamma;
+
+        var element = document.getElementById('myElement');
+        element.style.transform = 'rotate(' + alpha + 'deg)';
+      }, false);
+    } else {
+      alert('Your browser does not support the DeviceOrientationEvent');
+    }
+  </script>
 </body>
 </html>
