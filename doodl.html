@@ -9,6 +9,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
     </head>
 <body>
+    <div id="myElement"></div>
+
+    <script>
+      if (window.DeviceOrientationEvent) {
+        window.addEventListener("deviceorientation", function(event) {
+          var absolute = event.absolute;
+          var alpha = event.alpha;
+          var beta = event.beta;
+          var gamma = event.gamma;
+  
+          var element = document.getElementById('myElement');
+          element.style.transform = 'rotate(' + alpha + 'deg)';
+        }, false);
+      } else {
+        alert('Your browser does not support the DeviceOrientationEvent');
+      }
+    </script>
+    
     </div>
     <div class="container">
         <div class="vkadki">
