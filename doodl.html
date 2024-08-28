@@ -37,22 +37,17 @@
         <button>Камень</button>
       </a>
     </div>
-  </div>
+</div>
 
-  <script>
-    if (window.DeviceOrientationEvent) {
-      window.addEventListener("deviceorientation", function(event) {
-        var absolute = event.absolute;
-        var alpha = event.alpha;
-        var beta = event.beta;
-        var gamma = event.gamma;
-
-        var element = document.getElementById('myElement');
-        element.style.transform = 'rotate(' + alpha + 'deg)';
-      }, false);
-    } else {
-      alert('Your browser does not support the DeviceOrientationEvent');
-    }
-  </script>
+<script>
+  if ("geolocation" in navigator) {
+    navigator.geolocation.watchPosition(function(position) {
+      var element = document.getElementById('myElement');
+      element.style.transform = 'rotate(' + position.coords.heading + 'deg)';
+    });
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+</script>
 </body>
 </html>
