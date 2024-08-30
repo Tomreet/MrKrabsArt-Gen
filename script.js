@@ -39,14 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Twerk Race 3D',
             appToken: '61308365-9d16-4040-8bb0-2f4a4c69074c',
             promoId: '61308365-9d16-4040-8bb0-2f4a4c69074c',
-            timing: 12000, // 15 seconds           //4,1 мин
+            timing: 12000, // 12 seconds           //4,1 мин
             attempts: 35,
         },
         7 : {
             name: 'Polysphere',
             appToken: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
             promoId: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
-            timing: 3000, // 30 seconds               //55 секунд
+            timing: 3000, // 3 seconds               //55 секунд
             attempts: 35,
         },
         8: {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'Gangs Wars',
             appToken: 'b6de60a0-e030-48bb-a551-548372493523',
             promoId: 'c7821fa7-6632-482c-9635-2bd5798585f9',
-            timing: 20000, // 20 seconds
+            timing: 30000, // 30 seconds
             attempts: 20,
         }
     
