@@ -90,6 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
             promoId: '112887b0-a8af-4eb2-ac63-d82df78283d9',
             timing: 20000, // 40 seconds
             attempts: 30,
+        },
+        14: {
+            name: 'Tile Trio',
+            appToken: 'e68b39d2-4880-4a31-b3aa-0393e7df10c7',
+            promoId: 'e68b39d2-4880-4a31-b3aa-0393e7df10c7',
+            timing: 20000, // 20 seconds
+            attempts: 20,
         }
     
     };
