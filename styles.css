@@ -3,14 +3,14 @@ body {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     /*текст кол. ключей*/
-    color: #e5ff00;
+    color: #ff2fd2;
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: fit-content;
     margin: 0;
     flex-direction: column;
-    background-image: url('https://i.pinimg.com/564x/25/ca/b7/25cab75b36abebcabb2cb0f3181e2223.jpg');
+    background-image: url('https://i.pinimg.com/474x/bb/bd/5e/bbbd5efad6d5334138d7be18036eabd4.jpg');
     background-size: cover;
     background-repeat: no-repeat;
    
@@ -35,7 +35,7 @@ body {
     max-width: 400px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 50px #ff8800;
+    box-shadow: 0 0 50px #ff00c8;
     display: flex; /* Используем flexbox для выравнивания содержимого */
     flex-direction: column; /* Направление по вертикали */
     align-items: center; /* Центрируем по поперечной оси */
@@ -45,8 +45,10 @@ body {
 h1 {
     margin-bottom: 25px;
     font-size: 24px;
-    color: #ff8800;
+    color: #ff00c8;
 }
+
+
 
 .doodl p iframe {
     width: 100%;
@@ -61,7 +63,7 @@ h1 {
     max-width: 300px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 50px #ff8800;
+    box-shadow: 0 0 50px #ff00c8;
     display: flex; /* Используем flexbox для выравнивания содержимого */
     flex-direction: column; /* Направление по вертикали */
     align-items: center; /* Центрируем по поперечной оси */
@@ -80,7 +82,7 @@ iframe {
     max-width: 300px;
     width: 100%;
     text-align: center;
-    box-shadow: 0 0 50px #ff8800;
+    box-shadow: 0 0 50px #ff00c8;
     display: flex; /* Используем flexbox для выравнивания содержимого */
     flex-direction: column; /* Направление по вертикали */
     align-items: center; /* Центрируем по поперечной оси */
@@ -95,7 +97,7 @@ iframe {
 
 /*Контур вкладок*/
 .game-option {
-    border: 1px solid #e5ff00;
+    border: 1px solid #ff2fd2;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
@@ -122,14 +124,14 @@ iframe {
 /*Наименование игр*/
 .game-option p {
     font-weight: 500;
-    color: #e5ff00;
+    color: #ff2fd2;
 }
 /*Выбраная вкладка*/
 .game-option:hover, .game-option.selected {
     transform: scale(1.05);
-    border-color: #ff8800;
-    border: 1px solid #e5ff00;
-    box-shadow: 0 0 20px #ff8800;
+    border-color: #ff00c8;
+    border: 1px solid #ff2fd2;
+    box-shadow: 0 0 20px #ff00c8;
 }
 /*Высота меню*/
 .form-group {
@@ -141,7 +143,7 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #e5ff00;
+    color: #ff2fd2;
 }
 /*Ползунок*/
 .key-slider {
@@ -166,14 +168,14 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #e5ff00;
+    background: #ff2fd2;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 /*Активный ползунок*/
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
-    background: #ff8800;
+    background: #ff00c8;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -184,12 +186,12 @@ label {
 #keyValue {
     font-size: 18px;
     font-weight: bold;
-    color: #ff8800;
+    color: #ff00c8;
     font-family: 'Courier New', Courier, monospace;
 }
 /*кнопки*/
 button {
-    background-color: #e5ff00;
+    background-color: #ff2fd2;
     color: rgb(0, 0, 0);
     border: none;
     padding: 12px 20px;
@@ -201,7 +203,7 @@ button {
 }
 /*активные кнопки*/
 button:hover {
-    background-color: #ff8800;
+    background-color: #ff00c8;
 }
 
 .hidden {
@@ -210,20 +212,20 @@ button:hover {
 }
 
 .progress-bar {
-    background-color: #e5ff00;
+    background-color: #ff2fd2;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 25px;
     height: 35px;
     position: relative;
-    box-shadow: 0 0 20px #ff8800;
+    box-shadow: 0 0 20px #ff00c8;
     
 }
 
 
 .progress-bar div {
     height: 100%;
-    background-color: #ff8800;
+    background-color: #ff00c8;
     width: 0;
     transition: width 0.5s;
 }
@@ -245,7 +247,7 @@ button:hover {
     flex: 1;
     padding: 12px;
     font-size: 16px;
-    border: 1px solid #ff8800;
+    border: 1px solid #ff00c8;
     border-radius: 8px;
     margin-right: 12px;
 }
@@ -268,7 +270,7 @@ button:hover {
 .footer {
     margin-top: 25px;
     font-size: 14px;
-    color: #e5ff00;
+    color: #ff2fd2;
 }
 
 #copyStatus {
