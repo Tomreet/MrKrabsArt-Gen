@@ -121,9 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('generateAllKeysBtn').addEventListener('click', async () => {
         const gameIds = Object.keys(games).map(Number);
         const keyCount = {
-            "1": 8, // Stone Age
+            "1": 4, // Stone Age
             "2": 4, // Tile Trio
-            "3": 4, // Fluff Crusade
+            "3": 8, // Fluff Crusade
             "4": 4, // Mow and Trim
             "5": 4, // Train Miner
             "6": 4, // Chain Cube 2048
