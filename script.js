@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+    
+       11: {
+            name: 'Bouncemasters',
+            appToken: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
+            promoId: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
+            timing: 20000, // 40 seconds
+            attempts: 30,
+        },
 
-        10 : {
+        10: {
             name: 'Polysphere',
             appToken: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
             promoId: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
@@ -131,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "8": 4, // Zoopolis
             "9": 4, // Twerk Race 3D
             "10": 4 // Polysphere
+            "11": 5 // Bouncemasters
         };
     
         // Скрываем форму и показываем прогресс
