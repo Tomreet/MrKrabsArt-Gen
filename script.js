@@ -1,3 +1,36 @@
+// Функция для проверки статуса подписки пользователя
+async function checkSubscription() {
+    try {
+      const response = await fetch('/check-subscription', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ userId: userId }) // userId - уникальный идентификатор пользователя
+      });
+  
+      const data = await response.json();
+      return data.isSubscribed;
+    } catch (error) {
+      console.error('Ошибка при проверке подписки:', error);
+      return false;
+    }
+  }
+  
+  // Использование функции для ограничения доступа к веб-приложению
+  window.addEventListener('DOMContentLoaded', async () => {
+    const isSubscribed = await checkSubscription();
+    if (isSubscribed) {
+      // Пользователь подписан, разрешить доступ к веб-приложению
+      // Ваш код для отображения веб-приложения
+    } else {
+      // Пользователь не подписан, показать сообщение с призывом подписаться
+      const subscriptionMessage = document.createElement('div');
+      subscriptionMessage.textContent = 'Пожалуйста, подпишитесь на наш Telegram-канал, чтобы получить доступ к этому веб-приложению.';
+      document.body.appendChild(subscriptionMessage);
+    }
+});
+  
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
     
