@@ -138,8 +138,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "7": 4, // Merge Away
             "8": 4, // Zoopolis
             "9": 4, // Twerk Race 3D
-            "10": 4 // Polysphere
-            "11": 5 // Bouncemasters
+            "10": 4, // Polysphere
+            "11": 4 // Bouncemasters
         };
     
         // Скрываем форму и показываем прогресс
