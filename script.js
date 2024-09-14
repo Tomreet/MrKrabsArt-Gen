@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+        
+        12: {
+            name: 'Hide Ball',
+            appToken: '4bf4966c-4d22-439b-8ff2-dc5ebca1a600',
+            promoId: '4bf4966c-4d22-439b-8ff2-dc5ebca1a600',
+            timing: 40000, // 30 seconds
+            attempts: 30,
+        },
     
-       11: {
+        11: {
             name: 'Bouncemasters',
             appToken: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
             promoId: 'bc72d3b9-8e91-4884-9c33-f72482f0db37',
