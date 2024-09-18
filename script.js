@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "9": 4, // Twerk Race 3D
             "10": 4, // Polysphere
             "11": 4, // Bouncemasters
-            "12": 4 // Hide Ball
+            "12": 4, // Hide Ball
             "13": 4 // Pin Out Master
         };
     
