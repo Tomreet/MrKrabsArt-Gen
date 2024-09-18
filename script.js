@@ -1,3 +1,21 @@
+toastr.options = {
+  "closeButton": true,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": true,
+  "positionClass": "toast-top-center",
+  "preventDuplicates": true,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "10000",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut",
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
 
@@ -196,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     clientToken = await login(clientId, game.appToken);
                 } catch (error) {
-                    alert(`Ошибка входа: ${error.message}!\nПревышен лимит запросов, смените IP, включив VPN сервис.\nИли ожидайте 10 минут для обнуления лимитов запросов.`);
+                    toastr.error(`Превышен лимит запросов, сменить IP, включить VPN-сервис.<br>Или ожидайте 10 минут для обнуления лимитов запросов.`, `Упс...`);
                     return null;
                 }
     
@@ -307,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                alert(`Ошибка входа: ${error.message}!\nПревышен лимит запросов, смените IP, включив VPN сервис.\nИли ожидайте 10 минут для обнуления лимитов запросов.`);
+                toastr.error(`Превышен лимит запросов, сменить IP, включить VPN-сервис.<br>Или ожидайте 10 минут для обнуления лимитов запросов.`, `Упс...`);
                 startBtn.disabled = false;
                 return null;
             }
