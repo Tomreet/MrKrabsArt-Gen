@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     clientToken = await login(clientId, game.appToken);
                 } catch (error) {
-                    alert(`Ошибка входа: Failed to login. Превышен лимит запросов, смените IP, включив VPN сервис, или ожидайте 10 минут для обнуления лимитов запросов: ${error.message}`);
+                    alert(`Превышен лимит запросов, включив VPN сервис, или ожидайте 10 минут для обнуления лимитов запросов: ${error.message}');
                     return null;
                 }
     
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                alert(`Ошибка входа: Failed to login. Превышен лимит запросов, смените IP, включив VPN сервис, или ожидайте 10 минут для обнуления лимитов запросов: ${error.message}');
+                alert(`Превышен лимит запросов, включив VPN сервис, или ожидайте 10 минут для обнуления лимитов запросов: ${error.message}');
                 startBtn.disabled = false;
                 return null;
             }
