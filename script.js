@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+
+        13: {
+            name: 'Pin Out Master',
+            appToken: 'd2378baf-d617-417a-9d99-d685824335f0',
+            promoId: 'd2378baf-d617-417a-9d99-d685824335f0',
+            timing: 20000, // 30 seconds
+            attempts: 30,
+        },
         
         12: {
             name: 'Hide Ball',
