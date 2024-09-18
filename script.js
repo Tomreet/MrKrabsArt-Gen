@@ -165,7 +165,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "10": 4, // Polysphere
             "11": 4, // Bouncemasters
             "12": 4, // Hide Ball
-            "13": 4 // Pin Out Master
+            "13": 4, // Pin Out Master
+            "14": 4 // Count Masters
         };
     
         // Скрываем форму и показываем прогресс
