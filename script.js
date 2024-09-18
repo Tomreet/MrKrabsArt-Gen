@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                alert(`Не удалось войти в систему(Перезагрузите генератор или поробуйте позже): ${error.message}`);
+                alert(`Ошибка входа: Failed to login. Превышен лимит запросов, смените IP, включив VPN сервис, или ожидайте 10 минут для обнуления лимитов запросов.');
                 startBtn.disabled = false;
                 return null;
             }
