@@ -325,7 +325,7 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                toastr.error(`Превышен лимит запросов, сменить IP, включить VPN-сервис.<br>Или ожидайте 10 минут для обнуления лимитов запросов.`, `Упс...`);
+                toastr.error(`Превышен лимит запросов, смените IP используя VPN-сервис.<br>Или ожидайте 10 минут для обнуления лимитов запросов.`, `Упс...`);
                 startBtn.disabled = false;
                 return null;
             }
