@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 try {
                     clientToken = await login(clientId, game.appToken);
                 } catch (error) {
-                    alert(`Ошибка входа: ${error.message}.\n Превышен лимит запросов, смените IP, включив VPN сервис.\n или ожидайте 10 минут для обнуления лимитов запросов.`);
+                    alert(`Ошибка входа: ${error.message}!\nПревышен лимит запросов, смените IP, включив VPN сервис.\nИли ожидайте 10 минут для обнуления лимитов запросов.`);
                     return null;
                 }
     
@@ -307,11 +307,11 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 clientToken = await login(clientId, game.appToken);
             } catch (error) {
-                alert(`Ошибка входа: ${error.message}.\n Превышен лимит запросов, смените IP, включив VPN сервис.\n или ожидайте 10 минут для обнуления лимитов запросов.`);
+                alert(`Ошибка входа: ${error.message}!\nПревышен лимит запросов, смените IP, включив VPN сервис.\nИли ожидайте 10 минут для обнуления лимитов запросов.`);
                 startBtn.disabled = false;
                 return null;
             }
-
+            
             for (let i = 0; i < game.attempts; i++) {
                 const hasCode = await emulateProgress(clientToken, game.promoId);
                 updateProgress((100 / game.attempts) / keyCount, `Эмуляция прогресса ${i + 1}/${game.attempts}...`);
