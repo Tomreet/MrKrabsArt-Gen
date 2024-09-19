@@ -18,6 +18,14 @@ toastr.options = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+
+        16: {
+            name: 'Among Water',
+            appToken: 'daab8f83-8ea2-4ad0-8dd5-d33363129640',
+            promoId: 'daab8f83-8ea2-4ad0-8dd5-d33363129640',
+            timing: 20000, // 30 seconds
+            attempts: 30,
+        },
       
         15: {
             name: 'Infected Frontier',
@@ -193,7 +201,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "12": 4, // Hide Ball
             "13": 4, // Pin Out Master
             "14": 4, // Count Masters
-            "15": 4 // Infected Frontier
+            "15": 4, // Infected Frontier
+            "16": 4 // Among Water
         };
     
         // Скрываем форму и показываем прогресс
