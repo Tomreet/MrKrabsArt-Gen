@@ -18,6 +18,7 @@ toastr.options = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+      
         15: {
             name: 'Infected Frontier',
             appToken: 'eb518c4b-e448-4065-9d33-06f3039f0fcb',
