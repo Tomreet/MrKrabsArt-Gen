@@ -19,6 +19,14 @@ toastr.options = {
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
 
+        17: {
+            name: 'Factory World',
+            appToken: 'd02fc404-8985-4305-87d8-32bd4e66bb16',
+            promoId: 'd02fc404-8985-4305-87d8-32bd4e66bb16',
+            timing: 20000, // 30 seconds
+            attempts: 30,
+        },
+
         16: {
             name: 'Among Water',
             appToken: 'daab8f83-8ea2-4ad0-8dd5-d33363129640',
@@ -202,7 +210,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "13": 4, // Pin Out Master
             "14": 4, // Count Masters
             "15": 4, // Infected Frontier
-            "16": 4 // Among Water
+            "16": 4, // Among Water
+            "17": 4 // Factory World
         };
     
         // Скрываем форму и показываем прогресс
