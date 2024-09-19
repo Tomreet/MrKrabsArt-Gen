@@ -18,6 +18,13 @@ toastr.options = {
 
 document.addEventListener('DOMContentLoaded', () => {
     const games = {
+        15: {
+            name: 'Infected Frontier',
+            appToken: 'eb518c4b-e448-4065-9d33-06f3039f0fcb',
+            promoId: 'eb518c4b-e448-4065-9d33-06f3039f0fcb',
+            timing: 20000, // 30 seconds
+            attempts: 30,
+        },
 
         14: {
             name: 'Count Masters',
@@ -185,6 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "12": 4, // Hide Ball
             "13": 4, // Pin Out Master
             "14": 4 // Count Masters
+            "15": 4 // Infected Frontier
         };
     
         // Скрываем форму и показываем прогресс
