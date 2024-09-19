@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "11": 4, // Bouncemasters
             "12": 4, // Hide Ball
             "13": 4, // Pin Out Master
-            "14": 4 // Count Masters
+            "14": 4, // Count Masters
             "15": 4 // Infected Frontier
         };
     
