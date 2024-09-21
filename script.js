@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const keyCount = {
             "1": 4, // Stone Age
             "2": 4, // Tile Trio
-            "3": 8, // Fluff Crusade
+            "3": 4, // Fluff Crusade
             "4": 4, // Mow and Trim
             "5": 4, // Train Miner
             "6": 4, // Chain Cube 2048
