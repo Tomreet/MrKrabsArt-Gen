@@ -1,7 +1,7 @@
 # Hamster Key Генератор
 
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://astendant-bavarois-09109e.netlify.app/)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://astounding-bavarois-09109e.netlify.app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Генератор промо-ключей для игр Hamster Kombat и связанных проектов. Поддерживает 17+ игр с автоматической эмуляцией прогресса и генерацией ключей.
 
@@ -13,6 +13,7 @@
 - 📋 Автоматическое копирование ключей
 - ⏳ Прогресс бар с визуализацией процесса
 - 🔄 Возможность повторной генерации
+- 🕹️ 3 Игры для комфортного ожидания генерации ключей (Doodl, Flappy Bird, Башня) 
 
 ## 🕹️ Поддерживаемые игры
 
@@ -54,17 +55,17 @@
 - Netlify для хостинга
 
 ### Установка
+```
 git clone https://github.com/your-repo/hamster-key-generator.git
 cd hamster-key-generator
+```
 # Открыть index.html в браузере
 ## 📜 Лицензия
 Распространяется под лицензией [MIT](LICENSE). 
 
 ## 🔗 Ссылки
 - [Демо-версия](https://astendant-bavarois-09109e.netlify.app/)
-- [Автор](https://t.me/Mrkrabsart)
-- [Телеграм-канал](https://t.me/+Up7P6ppWdxdiNjIy)
-
----
-
-🐹 Для Hamster Kombat энтузиастов
+- Автор: [MrKrabsArt](t.me/Mrkrabsart) 👨💻
+- Поддержка: [Почта](kajkovartem20@gmail.com) ✉️
+- Телеграмм канал: [ссылка](t.me/lMrKrabsArtl) 💻
+- Вклад: Пиар и предложения приветствуются! 🤝
