@@ -13,8 +13,10 @@ body {
     background-image: url('https://i.pinimg.com/564x/24/99/f4/2499f4113f792e63db2fa61e5c2a5a2a.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-   
-    
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }
 .tab-button {
     gap: 10px;
@@ -153,7 +155,7 @@ label {
 }
 
 .key-slider input[type="range"] {
-    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
     height: 8px;
     border-radius: 5px;
@@ -163,7 +165,6 @@ label {
 }
 
 .key-slider input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
     appearance: none;
     width: 20px;
     height: 20px;
