@@ -68,7 +68,7 @@ cd hamster-key-generator
 
 ## 🔗 Ссылки
 - [Демо-версия](https://astendant-bavarois-09109e.netlify.app/)
-- Автор: [MrKrabsArt](t.me/Mrkrabsart) 👨💻
-- Поддержка: [Почта](kajkovartem20@gmail.com) ✉️
-- Телеграмм канал: [ссылка](t.me/lMrKrabsArtl) 💻
+- Автор: [MrKrabsArt]() - t.me/Mrkrabsart 👨💻
+- Поддержка: [Почта]() - kajkovartem20@gmail.com ✉️
+- Телеграмм канал: [ссылка]() - (t.me/lMrKrabsArtl) 💻
 - Вклад: Пиар и предложения приветствуются! 🤝
