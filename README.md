@@ -1,9 +1,12 @@
-# Hamster Key Генератор
+# 🐹 Hamster Key Генератор
 
 [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://astounding-bavarois-09109e.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Генератор промо-ключей для игр Hamster Kombat и связанных проектов. Поддерживает 17+ игр с автоматической эмуляцией прогресса и генерацией ключей.
+
+![Preview](./Screen1.JPG)
+![Preview](./Screen2.JPG)
 
 ## ✨ Возможности
 
