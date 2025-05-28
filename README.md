@@ -59,8 +59,8 @@
 
 ### Установка
 ```
-git clone https://github.com/your-repo/hamster-key-generator.git
-cd hamster-key-generator
+git https://github.com/Tomreet/MrKrabsArt-Gen
+cd MrKrabsArt-Gen
 ```
 # Открыть index.html в браузере
 ## 📜 Лицензия
